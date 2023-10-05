@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Units</title>
+    <!-- vh, vw, rem, em, % -->
+
+    <!-- vh - viewport height, vw - viewport width -->
+    <style>
+      html {
+        /* font-size: 10px; */
+      }
+      h1 {
+        color: red;
+        font-size: 2.5rem;
+      }
+      .text {
+        font-size: 2rem;
+      }
+
+      .text span {
+        font-size: 2em;
+      }
+
+      .boxes {
+        width: 500px;
+        height: 500px;
+        background-color: cyan;
+      }
+      .boxes .box {
+        /* width: 50vw; */
+        width: 50%;
+        /* height: 30vh; */
+        height: 50%;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Hello GWP202</h1>
+      <p class="text">
+        Lorem ipsum dolor sit amet, <span>consectetur adipisicing.</span>
+      </p>
+
+      <div class="boxes">
+        <div class="box"></div>
+      </div>
+    </section>
+  </body>
+</html>
