@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#team {
+  background-color: #c4c4c4;
+  padding: 50px;
+}
+
+#team .team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#team .team .team-member {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  background-color: #fff;
+  padding: 3rem 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+#team .team .team-member img {
+  width: 50%;
+  border-radius: 50%;
+}
+#team h2,
+#team .container > p {
+  text-align: center;
+  color: #072125;
+}
+
+#team .team .team-member .social-icons {
+  display: flex;
+  column-gap: 10px;
+}
+#team .team .team-member .social-icons a {
+  color: #072125;
+  border: 1px solid #072125;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#team .team-content {
+  margin: 30px 0;
+}
