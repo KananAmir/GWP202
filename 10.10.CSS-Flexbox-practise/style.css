@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border: 2px solid red;
+  padding: 20px;
+}
+.container .boxes {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+  height: 20%;
+}
+.container .boxes .box {
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxes .box:nth-child(2) {
+  background-color: blueviolet;
+}
+.boxes .box:nth-child(3) {
+  background-color: orange;
+}
+.boxes .box:nth-child(4) {
+  background-color: yellow;
+}
+.boxes .box:nth-child(5) {
+  background-color: green;
+}
