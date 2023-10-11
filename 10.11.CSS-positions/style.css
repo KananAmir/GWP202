@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header .header nav ul {
+  display: flex;
+  column-gap: 25px;
+}
+header .header nav ul li a {
+  color: white;
+}
+
+.cont {
+  background-color: teal;
+  height: 50vh;
+}
+.cont .box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-top: 80px;
+}
+
+.cont .bg-red {
+  background-color: red;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+.cont .bg-yellow {
+  background-color: yellow;
+  position: relative;
+  /* top: 30px;
+  right: 30px; */
+  right: 20px;
+  /* z-index: 2; */
+}
+
+.bg-yellow .bg-blue {
+  background-color: blue;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
+/* input {
+  padding: 5px 15px;
+}
+.fa-magnifying-glass {
+  position: relative;
+  right: 25px;
+  top: 2px;
+} */
+
+.input-box {
+  margin: 25px;
+  position: relative;
+  background-color: grey;
+  display: inline-block;
+}
+.input-box .fa-magnifying-glass {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.input-box input {
+  padding: 5px 25px 5px 15px;
+}
+
+.home {
+  height: 100vh;
+  background-color: aqua;
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(234, 218, 197);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header nav ul {
+  display: flex;
+  column-gap: 25px;
+}
+
+#hero-banner {
+  background-color: rgb(234, 218, 197);
+  margin-top: 80px;
+}
+.hero-banner {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.hero-banner-info,
+.hero-banner-image {
+  width: 50%;
+}
+
+.hero-banner-image img {
+  width: 100%;
+  position: relative;
+  /* top: -20px;
+  left: -20px; */
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+}
+.hero-banner-image .border {
+  width: 50%;
+  border: 3px solid orange;
+  border-radius: 10px;
+}
+.hero-banner-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-banner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 25px;
+}
+
+.hero-banner-name {
+  font-size: 4rem;
+}
+.hire-me {
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
+.hire-me:hover {
+  border: 2px solid orange;
+  background-color: transparent;
+  color: orange;
+}
+
+.social-icons {
+  display: flex;
+  column-gap: 15px;
+}
+
+.line-box .line {
+  border: 2px solid orange;
+  width: 30%;
+}
+
+.top-line {
+  text-decoration: overline orange;
+}
+
+#about {
+  background-color: grey;
+  height: 100vh;
+}
