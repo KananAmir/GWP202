@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#outer {
+  width: 350px;
+  height: 350px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 25px solid aqua;
+}
+#middle {
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 25px solid black;
+}
+#inner {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 50%;
+  border: 25px solid blueviolet;
+}
