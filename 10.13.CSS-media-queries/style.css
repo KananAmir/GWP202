@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: grey;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  flex-direction: row;
+}
+
+.container .box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box:nth-child(odd) {
+  background-color: red;
+}
+.container .box:nth-child(even) {
+  background-color: teal;
+}
+.container .box:nth-child(3) {
+  /* display: none; */
+  visibility: hidden;
+}
+
+p {
+  color: red;
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .container .box:nth-child(odd) {
+    background-color: rgb(13, 255, 0);
+  }
+  .container .box:nth-child(even) {
+    background-color: rgb(176, 101, 167);
+  }
+
+  .container .box:nth-child(1),
+  .container .box:last-child {
+    display: none;
+  }
+}
+
+/* breakpoints */
+@media screen and (max-width: 767px) {
+  .container .box:nth-child(odd) {
+    display: none;
+  }
+
+  /* .container .box{
+    display: unset;
+  } */
+}
+
+/* @media (max-width: 1024px) {
+}
+@media (width >=768px) {
+}
+@media (768px <= width <= 1024px) {
+} */
+
+/* desktop first vs mobile first */
+
+/* min-width vs max-width */
