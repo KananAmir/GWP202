@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #20484f;
+}
+
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.header nav ul {
+  display: flex;
+  column-gap: 25px;
+}
+.header nav ul li a {
+  color: white;
+}
+.header .logo {
+  color: white;
+  font-size: 2rem;
+}
+.header .login-signup .sign-up {
+  width: 82px;
+  height: 41px;
+  border-radius: 10px;
+  border: none;
+  background-color: #b8e4da;
+  color: #20484f;
+}
+.header .login-signup .login {
+  width: 82px;
+  height: 41px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.header .fa-solid.fa-bars {
+  display: none;
+  color: white;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: #20484f;
+  padding: 3rem 0;
+}
+
+footer .footer {
+  display: flex;
+}
+footer .footer .footer-left,
+footer .footer .footer-right {
+  width: 50%;
+}
+
+footer .footer .footer-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .check {
+  display: flex;
+  gap: 20px;
+  /* margin: 20px 0; */
+}
+
+.footer .input-box {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+}
+.footer .input-box input {
+  border: none;
+  height: 48px;
+
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 32%;
+  border-radius: 10px;
+}
+.footer .input-box button {
+  position: absolute;
+  right: 0;
+  border: none;
+  height: 48px;
+  width: 30%;
+  border-radius: 0 10px 10px 0;
+  background-color: #b8e4da;
+  /* border-top-left-radius: 0;
+  border-bottom-left-radius: 0; */
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  footer .footer {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  footer .footer .footer-left,
+  footer .footer .footer-right {
+    /* width: unset; */
+    width: 100%;
+  }
+  footer .footer .footer-left {
+    align-items: center;
+  }
+  .footer .input-box {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .fa-solid.fa-bars {
+    display: block;
+  }
+
+  .header .login-signup,
+  .header nav {
+    display: none;
+  }
+
+  footer .footer .footer-right {
+    flex-direction: column;
+    align-items: center;
+  }
+}
