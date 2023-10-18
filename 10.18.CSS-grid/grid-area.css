@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 10vh auto 10vh;
+  grid-template-areas: "header header" "aside main" "footer footer";
+}
+
+header,
+aside,
+main,
+footer {
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  grid-area: header;
+}
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
