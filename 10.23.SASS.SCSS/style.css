@@ -1,0 +1,106 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.text {
+  color: #fff;
+  background-color: #333;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.container .box {
+  background-color: red;
+}
+
+.container .box:hover {
+  background-color: teal;
+}
+
+.container .box .text {
+  font-size: 24px;
+}
+
+.container .box {
+  background-color: teal;
+  width: 100px;
+  height: 100px;
+}
+.container .box .text {
+  font-size: 24px;
+}
+.container .box.bg-red {
+  background-color: red;
+}
+
+header {
+  background-color: teal;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header nav ul {
+  display: flex;
+}
+header .header nav ul li a {
+  color: red;
+}
+
+.info {
+  background-color: red;
+  box-shadow: 0 0 1px rgba(255, 0, 0, 0.25);
+  color: #fff;
+}
+
+.alert {
+  background-color: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+  color: #fff;
+}
+
+.success {
+  background-color: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+  color: #fff;
+}
+
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.btn {
+  width: 120px;
+  height: 120px;
+  border: 1px solid teal;
+  color: teal;
+  background-color: transparent;
+}
+
+.btn {
+  background-color: red;
+}
+
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}/*# sourceMappingURL=style.css.map */

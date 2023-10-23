@@ -1,0 +1,158 @@
+//VARIABLES
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$color-white: #fff;
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.text {
+  color: $color-white;
+  //   color: #fff;
+  background-color: #333;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+//NESTING
+
+.container {
+}
+.container .box {
+  background-color: red;
+}
+.container .box:hover {
+  background-color: teal;
+}
+.container .box .text {
+  font-size: 24px;
+}
+
+.box.bg-red {
+}
+.container {
+  .box {
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+
+    .text {
+      font-size: 24px;
+    }
+
+    &:hover {
+    }
+    &:nth-child(odd) {
+    }
+
+    &.bg-red {
+      background-color: red;
+    }
+  }
+}
+
+header {
+  background-color: teal;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      ul {
+        display: flex;
+        li {
+          a {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+//MIXINS
+
+@mixin theme($theme: red) {
+  background-color: $theme;
+  box-shadow: 0 0 1px rgba($theme, 0.25);
+  color: #fff;
+}
+
+.info {
+  @include theme;
+}
+.alert {
+  @include theme($theme: DarkRed);
+}
+.success {
+  @include theme(DarkGreen);
+}
+
+@mixin flexBox($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+header {
+  .header {
+    // @include flexBox();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexBox(space-between, flex-start);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-start;
+  }
+}
+
+// EXTENDS
+%primary-btn {
+  width: 120px;
+  height: 120px;
+  border: 1px solid teal;
+  color: teal;
+  background-color: transparent;
+}
+
+.btn {
+  @extend %primary-btn;
+  background-color: red;
+}
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+// This CSS won't print because %equal-heights is never extended.
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}
