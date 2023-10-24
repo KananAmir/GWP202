@@ -1,0 +1,70 @@
+footer {
+  background-color: $primary-color;
+  .footer {
+    .footer-top {
+      @include flex(space-between, flex-start);
+      padding: 3rem 0;
+      h4 {
+        color: $text-dark;
+        font-weight: 700;
+      }
+      h5 {
+        color: $bg-orange;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+      }
+      nav {
+        ul {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          li {
+            a {
+              color: $text-dark;
+            }
+          }
+        }
+      }
+      .social-icons {
+        display: flex;
+        column-gap: 20px;
+        .fa-brands {
+          color: $color-white;
+          width: 48px;
+          height: 48px;
+          background-color: $bg-orange;
+          border-radius: 50%;
+          @include flex();
+        }
+      }
+    }
+    .footer-bottom {
+      padding: 3rem 0;
+      border-top: 1px solid $bg-orange;
+      @include flex(space-between);
+      nav {
+        ul {
+          display: flex;
+          column-gap: 2rem;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        nav {
+          ul {
+            text-align: center;
+          }
+        }
+      }
+      .footer-bottom {
+        flex-direction: column;
+        row-gap: 2rem;
+      }
+    }
+  }
+}

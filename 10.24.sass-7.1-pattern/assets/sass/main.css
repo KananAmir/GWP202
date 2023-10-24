@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+#home #hero-banner .hero-banner .hero-banner-content .hero-banner-btn .contact-us, #home #hero-banner .hero-banner .hero-banner-content .hero-banner-btn .how-we-work, header .header .contact {
+  width: 138px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #f3d1bf;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+header {
+  background-color: #28293e;
+  padding: 1rem 0;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header nav ul {
+  display: flex;
+  gap: 3rem;
+}
+header .header nav ul li a {
+  color: #fff;
+}
+header .header .menu {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+  header .header .contact {
+    display: none;
+  }
+  header .header .menu {
+    display: block;
+  }
+}
+
+footer {
+  background-color: #f3d1bf;
+}
+footer .footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 0;
+}
+footer .footer .footer-top h4 {
+  color: #391400;
+  font-weight: 700;
+}
+footer .footer .footer-top h5 {
+  color: #ef6d58;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+footer .footer .footer-top nav ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+footer .footer .footer-top nav ul li a {
+  color: #391400;
+}
+footer .footer .footer-top .social-icons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+footer .footer .footer-top .social-icons .fa-brands {
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  background-color: #ef6d58;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .footer-bottom {
+  padding: 3rem 0;
+  border-top: 1px solid #ef6d58;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .footer-bottom nav ul {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  footer .footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  footer .footer .footer-top nav ul {
+    text-align: center;
+  }
+  footer .footer .footer-bottom {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
+
+#home #hero-banner {
+  background-color: #28293e;
+  padding: 3rem 0;
+}
+#home #hero-banner .hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home #hero-banner .hero-banner .hero-banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  position: relative;
+}
+#home #hero-banner .hero-banner .hero-banner-content h5 {
+  color: #ef6d58;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#home #hero-banner .hero-banner .hero-banner-content h1 {
+  letter-spacing: -2px;
+  line-height: 80px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  max-width: 513px;
+}
+#home #hero-banner .hero-banner .hero-banner-content p {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.64);
+}
+#home #hero-banner .hero-banner .hero-banner-content .hero-banner-btn .how-we-work {
+  background-color: #ef6d58;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.6s;
+}
+#home #hero-banner .hero-banner .hero-banner-content .hero-banner-btn .how-we-work:hover {
+  background-color: transparent;
+  color: #ef6d58;
+  border: 1px solid #ef6d58;
+}
+#home #hero-banner .hero-banner .hero-banner-content .hero-banner-btn .contact-us {
+  border: none;
+}
+#home #hero-banner .hero-banner .hero-banner-content .feedback {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#home #hero-banner .hero-banner .hero-banner-content .feedback p {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.64);
+}
+#home #hero-banner .hero-banner .hero-banner-content .feedback span {
+  font-size: 1rem;
+  color: #fff;
+}
+#home #hero-banner .hero-banner .hero-banner-content .star {
+  position: absolute;
+  right: 10%;
+  top: 20px;
+}
+#home #hero-banner .hero-banner .hero-banner-image {
+  width: 50%;
+}
+#home #hero-banner .hero-banner .hero-banner-image img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  #home #hero-banner .hero-banner {
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+  }
+  #home #hero-banner .hero-banner .hero-banner-content {
+    width: 100%;
+  }
+  #home #hero-banner .hero-banner .hero-banner-content .star {
+    display: none;
+  }
+  #home #hero-banner .hero-banner .hero-banner-image {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
