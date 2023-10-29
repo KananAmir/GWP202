@@ -1,0 +1,99 @@
+* {
+  list-style: none;
+  text-decoration: none !important;
+  font-family: Josefin Sans;
+}
+
+header {
+  background-image: url("./images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header .header-content {
+  margin-top: 10rem;
+}
+header .header-content .immersive {
+  max-width: 650px;
+}
+header .header-content .immersive h1 {
+  font-size: 72px;
+  line-height: 70px;
+}
+header nav ul li a {
+  color: white;
+}
+header nav ul li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+  header .header-content .immersive h1 {
+    font-size: 56px;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+#leader .leader-content {
+  position: relative;
+  left: -20%;
+}
+@media screen and (max-width: 767px) {
+  #leader .leader-content {
+    position: unset;
+  }
+}
+
+#our-creations .see-all {
+  background-color: transparent;
+  padding: 10px 30px;
+  transition: all 0.6s;
+}
+#our-creations .see-all:hover {
+  background-color: #000;
+  color: white;
+}
+#our-creations .our-creations-box {
+  position: relative;
+  transition: all 0.6s;
+}
+#our-creations .our-creations-box .our-creations-content {
+  color: white;
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+  font-size: 32px;
+  line-height: 32px;
+}
+#our-creations .our-creations-box:hover {
+  opacity: 0.6;
+}
+
+footer {
+  background-color: #000;
+}
+footer .logo {
+  width: 192px;
+}
+footer nav ul li a {
+  color: white;
+  transition: all 0.6s;
+}
+footer nav ul li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+footer .social-icons a {
+  margin-left: 10px;
+  transition: all 0.6s;
+}
+footer .social-icons a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+footer .copyright {
+  color: white;
+  opacity: 0.6;
+}/*# sourceMappingURL=style.css.map */
